@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $("p").css("color","red").slideUp(2000).slideDown(2000);
+                })
+            })     
+        </script>
+    </head>
+    <body>
+        <p>ABC</p>
+        <button class="btn">click</button>
+    </body>
+</html>

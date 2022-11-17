@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".b1").click(function(){
+                $("p").fadeIn(500);
+            });
+            $(".b2").click(function(){
+                $("p").fadeOut(500);
+            });
+        })
+    </script>
+</head>
+<body>
+    <p>ABC</p>
+    <button class="b1">fadeIn</button>
+    <button class="b2">fadeOut</button>
+</body>
+</html>

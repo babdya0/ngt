@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Pract8_3</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").hover(function(){
+                    document.write("Hello all");
+                });
+                $("p").on("click",function(){
+                    $(this).css("background","green");
+                });
+                $("#b2").click(function(){
+                    $("p").off("click");    
+                })
+                $("#b3").on("click",function(){
+                    $("#t1").hide();
+                })
+                $("input").select(function(){
+                    $("input").after("text marked!");
+                })
+                $("#b4").click(function(){
+                    $("input").trigger("select");
+                })
+            })
+        </script>
+</head>
+<body>
+    <button id="b1">hover</button>
+    <p>abc</p>
+    <p>TYIT</p>
+    <button id="b2">off</button><br>
+    <p id="t1">Hello man</p>
+    <button id="b3">on</button><br>
+    <input type="text" value="Hello brother"><br><br>
+    <button id="b4">trigger</button>
+</body>
+</html>
