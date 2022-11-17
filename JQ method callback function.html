@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $("p").hide("slow",function(){
+                        alert("This paragraph is now hidden....");
+                    })
+                })
+            })
+            </script>
+        </head>
+        <body>
+            <p>Ashish_229627</p>
+            <button class="btn">click</button>
+        </body>

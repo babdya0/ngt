@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <script src="jquery-3.6.1.min.js"></script> 
+        <script> 
+            $(document).ready(function(){ 
+                $("#btn").click(function(){ 
+                    $("img").animate({left:30});
+                }); 
+            })
+        </script> 
+    </head>
+    <style>
+        img{
+            position: relative;
+        }
+    </style>
+    <body> 
+        <img src="E:\ngt_27\OIP.jpg"></img>
+        <button id="btn">Start animation</button> 
+    </body> 
+</html>

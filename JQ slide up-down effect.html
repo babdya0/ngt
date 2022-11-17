@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("p").slideUp(500);
+                });
+                $("#b2").click(function(){
+                    $("p").slideDown(500);
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <p>abc</p>
+        <button id="b1">slideUp</button>
+        <button id="b2">slideDowm</button>
+    </body>
+</html>
